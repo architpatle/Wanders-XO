@@ -1,0 +1,134 @@
+.footer {
+  /* background: linear-gradient(
+    180deg,
+    #0b3f42 0%,
+    #083335 100%
+  ); */
+   background-color: #0E4F52;
+  color: var(--text-light);
+  padding: 100px 6% 40px;
+}
+
+
+/* Top section */
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* Headings */
+.footer h4 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+/* Contact Form */
+.contact input,
+.contact textarea,
+.newsletter input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 0;
+  margin-bottom: 20px;
+  color: var(--text-light);
+  font-family: var(--font-body);
+}
+
+.contact textarea {
+  resize: none;
+  height: 90px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Buttons */
+.primaryBtn {
+  background: var(--secondary-color);
+  color: #111;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.secondaryBtn {
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+/* Newsletter */
+.newsletter p {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* Links */
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 14px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.links li:hover {
+  opacity: 1;
+}
+
+/* Bottom */
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.socials {
+  display: flex;
+  gap: 18px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
