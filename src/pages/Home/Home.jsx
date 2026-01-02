@@ -4,6 +4,7 @@ import Difference from '../../components/Difference/Difference.jsx'
 import PopularDestinations from '../../components/PopularDestinations/PopularDestinations.jsx'
 import BookingSteps from '../../components/BookingSteps/BookingSteps.jsx'
 import Specializations from '../../components/Specializations/Specializations.jsx'
+import HowItWorks from '../../components/HowItWorks/HowItWorks.jsx'
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
 
         <Hero/>
         <Difference />
+        <HowItWorks />
         <PopularDestinations />
         <BookingSteps />
         <Specializations />
