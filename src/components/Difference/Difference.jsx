@@ -2,32 +2,32 @@ import React from "react";
 import styles from "./Difference.module.css";
 import centerImage from "../../assets/images/difference.jpg";
 
-import { 
-  LuWallet, 
-  LuMapPin, 
-  LuUsers, 
-  LuBadgePercent, 
+import {
+  LuWallet,
+  LuMapPin,
+  LuUsers,
+  LuBadgePercent,
 } from "react-icons/lu";
 
 const features = [
   {
-    title: "Join Us Solo Or Group",
-    text: "Travel your way — join as a solo explorer or be part of an exciting group journey with like-minded travelers.",
+    title: "Solo or Together, Always Personal",
+    text: "Travel solo or with a group — either way, your journey feels personal, welcoming, and thoughtfully crafted.",
     icon: <LuUsers />,
   },
   {
-    title: "Local Experts",
-    text: "Explore destinations with insights from local experts who know the culture, routes, and hidden gems.",
+    title: "Guided by Those Who Belong There",
+    text: "Every destination is explored with local experts who bring culture, stories, and hidden perspectives to life.",
     icon: <LuMapPin />,
   },
   {
-    title: "Flexible Payments",
-    text: "Flexible and affordable payment options that let you pay in full or through easy monthly installments.",
+    title: "Freedom in How You Pay",
+    text: "Flexible payment options that remove pressure and let you focus on the excitement of what’s ahead.",
     icon: <LuWallet />,
   },
   {
-    title: "Low Booking Fees",
-    text: "Enjoy transparent pricing with minimal booking fees and no hidden charges — just great travel value.",
+    title: "Honest Pricing, Real Value",
+    text: "Transparent pricing with low booking fees — no surprises, just great experiences at fair value.",
     icon: <LuBadgePercent />,
   },
 ];
@@ -35,7 +35,13 @@ const features = [
 const Difference = () => {
   return (
     <section className={styles.section}>
-      <h2 className={styles.heading}>How We Are Different?</h2>
+      <h2 className={styles.heading}>
+        Why This Travel Feels Different
+      </h2>
+
+      <p className={styles.subtext}>
+        Because the best journeys aren’t just planned — they’re thoughtfully designed.
+      </p>
 
       <div className={styles.wrapper}>
         {/* Left */}
@@ -49,9 +55,9 @@ const Difference = () => {
           ))}
         </div>
 
-        {/* Center Image */}
+        {/* Center */}
         <div className={styles.centerImage}>
-          <img src={centerImage} alt="Travel experience" />
+          <img src={centerImage} alt="Designed travel experience" />
         </div>
 
         {/* Right */}
