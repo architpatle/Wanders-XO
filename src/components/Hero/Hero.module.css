@@ -1,3 +1,7 @@
+/* =========================
+   HERO BASE
+========================= */
+
 .hero {
   position: relative;
   height: 100vh;
@@ -25,7 +29,7 @@
   object-fit: cover;
 }
 
-/* Theme overlay */
+/* Overlay */
 .overlay {
   position: absolute;
   inset: 0;
@@ -36,7 +40,10 @@
   );
 }
 
-/* Content */
+/* =========================
+   NORMAL CONTENT (SLIDE 2 & 3)
+========================= */
+
 .content {
   position: absolute;
   inset: 0;
@@ -76,7 +83,6 @@
   font-weight: 500;
 }
 
-/* Primary CTA */
 .ctaGroup .btn-light {
   background-color: var(--accent-color);
   color: var(--dark-background);
@@ -87,13 +93,95 @@
   background-color: #6ac94b;
 }
 
-/* Secondary CTA */
 .ctaGroup .btn-outline-light {
   border-color: var(--text-light);
   color: var(--text-light);
 }
 
-/* Controls */
+/* =========================
+   CINEMATIC HERO (SLIDE 1)
+========================= */
+
+.cinematicWrapper {
+  position: absolute;
+  inset: 0;
+  max-width: 1600px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.cinematicLayer {
+  position: absolute;
+  inset: 0;
+}
+
+/* Individual Words */
+.word {
+  position: absolute;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  opacity: 0;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Word Sizes (RESPONSIVE) */
+.xl {
+  font-size: clamp(48px, 7vw, 96px);
+}
+
+.lg {
+  font-size: clamp(36px, 5vw, 72px);
+}
+
+.md {
+  font-size: clamp(26px, 3.5vw, 48px);
+}
+
+.sm {
+  font-size: clamp(18px, 2.5vw, 32px);
+  font-weight: 500;
+}
+
+/* Color Tones */
+.accent {
+  color: var(--accent-color);
+}
+
+.accentSoft {
+  color: var(--secondary-color);
+}
+
+.light {
+  color: var(--text-light);
+}
+
+.muted {
+  color: var(--muted-text);
+}
+
+/* Bottom CTA */
+.bottomCTA {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 18px;
+  z-index: 3;
+}
+.bottomCTA button {
+    /* width: 100%; */
+    padding: 14px 0;
+    font-size: 15px;
+    border-radius: 999px;
+  }
+
+/* =========================
+   CONTROLS
+========================= */
+
 .control {
   position: absolute;
   top: 50%;
@@ -120,7 +208,10 @@
   right: 30px;
 }
 
-/* Dots */
+/* =========================
+   DOTS
+========================= */
+
 .dots {
   position: absolute;
   bottom: 30px;
@@ -148,23 +239,80 @@
   background: var(--accent-color);
 }
 
-/* Responsive */
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .word {
+    transform: translateX(-3%);
+  }
+}
+
 @media (max-width: 768px) {
-  .content {
-    padding-left: 6%;
-    padding-right: 6%;
+  
+  /* Cinematic text container */
+  .cinematicLayer {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 90%;
+    max-width: 420px;
   }
 
-  .heading {
+  /* Words become inline-blocks */
+  .word {
+    position: static !important;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    transform: none !important;
+    white-space: normal;
+    text-align: left;
+  }
+
+  /* Font scaling (mobile-optimized) */
+  .xl {
     font-size: 42px;
   }
 
-  .text {
-    font-size: 16px;
+  .lg {
+    font-size: 32px;
   }
 
-  .ctaGroup {
-    flex-direction: column;
-    align-items: flex-start;
+  .md {
+    font-size: 24px;
   }
+
+  .sm {
+    font-size: 18px;
+  }
+
+  /* CTA stays clean */
+  
+  .bottomCTA {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+
+    width: 90%;
+    max-width: 360px;
+    z-index: 3;
+  }
+
+  .bottomCTA button {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 15px;
+    border-radius: 999px;
+  }
+
+ 
 }
