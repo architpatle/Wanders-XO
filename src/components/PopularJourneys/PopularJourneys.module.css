@@ -10,16 +10,36 @@
   margin-bottom: 60px;
 }
 
+.eyebrowWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  max-width: 400px;
+
+}
+
 .eyebrow {
-  display: inline-block;
-  margin-bottom: 10px;
   font-size: 13px;
+  line-height: 1; /* 🔑 important */
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--secondary-color);
   font-weight: 600;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 
+.lineRight {
+  flex: 1;
+  height:1px;
+  background: linear-gradient(
+    to right,
+    #D8A21B60,
+    #D8A21B20
+  );
+}
 .heading {
   font-family: var(--font-heading);
   font-size: 46px;

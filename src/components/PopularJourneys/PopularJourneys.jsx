@@ -47,7 +47,11 @@ const PopularJourneys = () => {
     <section className={styles.section}>
       {/* Header */}
       <div className={styles.header}>
-       <span className={styles.eyebrow}>Popular Journeys</span>
+         {/* EYEBROW */}
+      <div className={styles.eyebrowWrapper}>
+        <span className={styles.eyebrow}>Popular Journeys</span>
+        <span className={styles.lineRight}></span>
+      </div>
         <h2 className={styles.heading}>Journeys People Fall In Love With</h2>
         <p className={styles.subheading}>
           Curated destinations designed for unforgettable moments — traveled,

@@ -39,7 +39,12 @@ const TravelStyles = () => {
       <div className={styles.container}>
         {/* LEFT CONTENT */}
         <div className={styles.left}>
-          <span className={styles.eyebrow}>Travel Styles</span>
+         {/* EYEBROW */}
+      <div className={styles.eyebrowWrapper}>
+        <span className={styles.eyebrow}>Travel Styles</span>
+        <span className={styles.lineRight}></span>
+      </div>
+          
 
           <h2 className={styles.heading}>
             Journeys shaped <br /> around how you feel

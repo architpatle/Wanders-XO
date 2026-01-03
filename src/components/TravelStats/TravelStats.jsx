@@ -83,7 +83,11 @@ const TravelStats = () => {
     <section className={styles.section} ref={sectionRef}>
       {/* HEADER */}
       <div className={styles.header}>
+       {/* EYEBROW */}
+      <div className={styles.eyebrowWrapper}>
         <span className={styles.eyebrow}>Our Impact</span>
+        <span className={styles.lineRight}></span>
+      </div>
         <h2 className={styles.heading}>
           Travel, measured <br /> by moments that matter
         </h2>

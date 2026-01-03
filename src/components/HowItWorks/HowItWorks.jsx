@@ -30,7 +30,11 @@ const HowItWorks = () => {
 </div>
 
       <div className={styles.header}>
-        <span className={styles.eyebrow}>How It Works</span>
+     <div className={styles.eyebrowWrapper}>
+  <span className={styles.eyebrow}>How It Works</span>
+  <span className={styles.lineRight}></span>
+</div>
+
         <h2 className={styles.heading}>
           Book Your Next Trip <br /> in Just 3 Simple Steps
         </h2>

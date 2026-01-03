@@ -1,84 +1,81 @@
 .navbar {
-    background: transparent;
-    padding: 18px 0;
-    z-index: 1000;
-    font-family: var(--font-body);
-    transition: background 0.3s ease, backdrop-filter 0.3s ease;
-
-    /* NEW */
-    border-bottom: 1px solid rgba(245, 247, 248, 0.15);
+  background: transparent;
+  padding: 26px 0;
+  z-index: 1000;
+  font-family: var(--font-body);
+  transition: background 0.35s ease, backdrop-filter 0.35s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Scroll state (add class later via JS) */
+/* SCROLLED STATE */
 .scrolled {
-    background: rgba(8, 59, 61, 0.85);
-    /* dark-background with opacity */
-    backdrop-filter: blur(8px);
+  background: rgba(8, 59, 61, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-/* Logo */
+/* LOGO */
 .logoWrapper {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo {
-    height: 70px;
+  height: 64px;
 }
 
-/* Nav links */
+/* NAV LINKS */
 .navLink {
-    color: var(--text-light);
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    opacity: 0.9;
-    transition: color 0.3s ease, opacity 0.3s ease;
+  color: var(--text-light);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  opacity: 0.85;
+  text-decoration: none;
+  transition: opacity 0.25s ease;
 }
+
 .navLink:hover {
-    color: var(--muted-text);
-    opacity: 1;
+  opacity: 1;
 }
 
-/* Login button */
-.loginBtn {
-    border-radius: 50px;
-    padding: 7px 24px;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--text-light);
-    background-color: var(--primary-color);
-    border: none;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-.loginBtn:hover {
-    background-color: #0d4548;
-    /* slightly darker accent */
-    transform: translateY(-1px);
-    color: var(--text-light);
-}
-.loginBtnScrolled {
-    background-color: var(--text-light);
-    color: var(--dark-background);
-}
-.loginBtnScrolled:hover {
-    background-color: #b9bdbf;
-    /* slightly darker light */
-    color: var(--dark-background);
+/* PRIMARY CTA */
+.ctaBtn {
+  padding: 10px 26px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--text-light);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-.scrolled {
-    background: rgba(8, 59, 61, 0.92);
-    /* darker for light sections */
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(245, 247, 248, 0.2);
+.ctaBtn:hover {
+  background: var(--text-light);
+  color: var(--dark-background);
+  transform: translateY(-1px);
 }
 
-/* Mobile adjustments */
+/* CTA WHEN SCROLLED */
+.ctaScrolled {
+  background: var(--text-light);
+  color: var(--dark-background);
+  border: none;
+}
+
+.ctaScrolled:hover {
+  background: #e5e7e8;
+  color: var(--dark-background);
+}
+
+/* MOBILE */
 @media (max-width: 991px) {
-    .logoWrapper {
-        position: static;
-        transform: none;
-        margin: 0 auto;
-    }
+  .logoWrapper {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
 }

@@ -35,6 +35,13 @@ const features = [
 const Difference = () => {
   return (
     <section className={styles.section}>
+      {/* EYEBROW */}
+<div className={styles.eyebrowWrapper}>
+  <span className={styles.lineLeft}></span>
+  <span className={styles.eyebrow}>Our Advantages</span>
+  <span className={styles.lineRight}></span>
+</div>
+
       <h2 className={styles.heading}>
         Why This Travel Feels Different
       </h2>

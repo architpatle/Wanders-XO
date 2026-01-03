@@ -8,7 +8,11 @@ const StartPlanning = () => {
     <section className={styles.wrapper}>
       {/* HEADING – OUTSIDE IMAGE */}
       <div className={styles.header}>
-        <span className={styles.eyebrow}>Start Planning</span>
+       {/* EYEBROW */}
+            <div className={styles.eyebrowWrapper}>
+              <span className={styles.eyebrow}>Start Planning</span>
+              <span className={styles.lineRight}></span>
+            </div>
         <h2 className={styles.heading}>
           Travel That Fits You — <br /> Not the Other Way Around
         </h2>
