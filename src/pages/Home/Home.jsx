@@ -6,15 +6,16 @@ import BookingSteps from '../../components/BookingSteps/BookingSteps.jsx'
 import Specializations from '../../components/Specializations/Specializations.jsx'
 import HowItWorks from '../../components/HowItWorks/HowItWorks.jsx'
 import PopularJourneys from '../../components/PopularJourneys/PopularJourneys.jsx'
+import Testimonials from '../../components/Testimonials/Testimonials.jsx'
 
 const Home = () => {
     return (
         <div>
-
         <Hero/>
         <Difference />
         <HowItWorks />
         <PopularJourneys />
+        <Testimonials />
         <PopularDestinations />
         <BookingSteps />
         <Specializations />
