@@ -25,14 +25,20 @@ const slides = [
                 text: "will",
                 size: "sm",
                 tone: "muted",
-                x: "41%",
+                x: "40%",
                 y: "40%"
             }, {
                 text: "go",
                 size: "md",
                 tone: "light",
-                x: "48%",
+                x: "45.5%",
                 y: "37%"
+            },{
+                text: "to",
+                size: "sm",
+                tone: "muted",
+                x: "51%",
+                y: "40%"
             }, {
                 text: "PLACES",
                 size: "lg",
@@ -42,17 +48,24 @@ const slides = [
             },
 
             // Line 2
+             {
+                text: "that",
+                size: "md",
+                tone: "light",
+                x: "29%",
+                y: "55%"
+            },
             {
                 text: "FEELS",
                 size: "xl",
                 tone: "accent",
-                x: "26%",
+                x: "37%",
                 y: "48%"
             }, {
-                text: "different",
+                text: "different.",
                 size: "md",
                 tone: "light",
-                x: "52%",
+                x: "62%",
                 y: "54%"
             },
 
