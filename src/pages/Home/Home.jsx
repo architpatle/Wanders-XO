@@ -10,6 +10,7 @@ import Testimonials from '../../components/Testimonials/Testimonials.jsx'
 import StartPlanning from '../../components/StartPlanning/StartPlanning.jsx'
 import TravelStyles from '../../components/TravelStyles/TravelStyles.jsx'
 import TravelStats from '../../components/TravelStats/TravelStats.jsx'
+import PreFooterContact from '../../components/PreFooterContact/PreFooterContact.jsx'
 
 const Home = () => {
     return (
@@ -22,9 +23,10 @@ const Home = () => {
         <StartPlanning />
         <TravelStyles />
         <TravelStats />
+        <PreFooterContact />
         {/* <PopularDestinations /> */}
         {/* <BookingSteps /> */}
-        <Specializations />
+        {/* <Specializations /> */}
         </div>
     )
 }
