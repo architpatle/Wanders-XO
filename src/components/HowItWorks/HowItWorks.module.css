@@ -1,6 +1,7 @@
 .section {
   padding: 120px 6%;
-  background: #fafafa;
+  background: url("../../assets/images/howitworks.png");
+  background-position: bottom;
 }
 
 /* HEADER */
