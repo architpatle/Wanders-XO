@@ -51,7 +51,7 @@ const HowItWorks = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top -100px",                 // 🔑 lock scroll immediately
+          start: "top -20%",                 // 🔑 lock scroll immediately
           end: `+=${cards.length * 100}%`,  // 🔑 enough scroll room
           scrub: true,
           pin: true,
