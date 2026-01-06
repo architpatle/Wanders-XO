@@ -52,7 +52,8 @@
 
 .stepCard {
   position: absolute;
-  inset: 0;              /* 🔑 THIS ENSURES PERFECT OVERLAP */
+  inset: 0;
+  /* 🔑 THIS ENSURES PERFECT OVERLAP */
   display: flex;
   border-radius: 16px;
   overflow: hidden;
@@ -94,35 +95,34 @@
   display: flex;
 }
 
-.barcodeContainer{
+.barcodeContainer {
   height: 100%;
   padding: 15px 30px;
   background: var(--secondary-color);
   border-radius: 16px 0 0 16px;
 
 }
+
 /* BARCODE */
 .barcode {
   width: 70px;
   height: 100%;
   padding: 10px;
-background-image: repeating-linear-gradient(
-    to bottom,
-    #111 0px,
-    #111 2px,
-    transparent 2px,
-    transparent 5px,
+  background-image: repeating-linear-gradient(to bottom,
+      #111 0px,
+      #111 2px,
+      transparent 2px,
+      transparent 5px,
 
-    #111 5px,
-    #111 6px,
-    transparent 6px,
-    transparent 9px,
+      #111 5px,
+      #111 6px,
+      transparent 6px,
+      transparent 9px,
 
-    #111 9px,
-    #111 12px,
-    transparent 12px,
-    transparent 14px
-  );
+      #111 9px,
+      #111 12px,
+      transparent 12px,
+      transparent 14px);
 
 
 }
@@ -161,21 +161,72 @@ background-image: repeating-linear-gradient(
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
+
+  /* Increase pinned stack height */
+  .stepsWrapper {
+    height: 400px;
+    /* enough room for image + content */
+  }
+
+  /* Stack card vertically */
   .stepCard {
     flex-direction: column;
+    height: 100%;
   }
 
-  .leftImage,
+  /* IMAGE SECTION */
+  .leftImage {
+    width: 100%;
+    height: 45%;
+    /* image takes upper half */
+  }
+
+  .leftImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* RIGHT CONTENT */
   .rightContent {
     width: 100%;
+    height: 55%;
+    /* remaining space */
+    flex-direction: row;
   }
 
-  .rightContent {
-    flex-direction: column;
+  /* BARCODE */
+  .barcodeContainer {
+    height: 100%;
+    padding: 12px 18px;
   }
 
   .barcode {
-    width: 100%;
-    height: 60px;
+    width: 48px;
+    height: 100%;
+  }
+
+  /* STEP COUNT */
+  .stepCount {
+    font-size: 26px;
+    padding: 14px;
+    white-space: nowrap;
+  }
+
+  /* TEXT */
+  .textBlock {
+    padding: 24px 22px;
+    height: 100%;
+    overflow-y: auto;
+    /* prevents clipping on small screens */
+  }
+
+  .textBlock h4 {
+    font-size: 22px;
+  }
+
+  .textBlock p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
