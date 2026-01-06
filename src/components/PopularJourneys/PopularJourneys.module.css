@@ -285,9 +285,7 @@
   }
 
   .carousel {
-    animation: none;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    animation: scroll 22s linear infinite; /* slightly slower for mobile */
     padding-bottom: 20px;
   }
 
