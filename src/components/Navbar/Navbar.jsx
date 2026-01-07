@@ -26,17 +26,17 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-start">
           <ul className="navbar-nav gap-4">
             <li className="nav-item">
-              <Link className={styles.navLink} to="/group-trips">
+              <Link className={styles.navLink} to="/group-journeys">
                 Group Journeys
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={styles.navLink} to="/customize-trip">
+              <Link className={styles.navLink} to="/plan-your-trip">
                 Plan Your Trip
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={styles.navLink} to="/packages">
+              <Link className={styles.navLink} to="/journeys">
                 Journeys
               </Link>
             </li>
@@ -66,7 +66,7 @@ const Navbar = () => {
                 className={`${styles.ctaBtn} ${
                   scrolled ? styles.ctaScrolled : ""
                 }`}
-                to="/customize-trip"
+                to="/start-planning"
               >
                 Start Planning
               </Link>
