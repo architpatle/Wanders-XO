@@ -81,7 +81,7 @@
 /* TICKET CARD */
 .ticketCard {
   min-width: 360px;
-  background: #dfdace;
+  background: rgba(216, 162, 27, 0.15);
   border-radius: 18px;
   padding: 18px 0;
   display: flex;
@@ -103,6 +103,7 @@
   text-align: center;
   color: #111;
   padding-bottom: 6px;
+  font-family: var(--font-heading);
 }
 
 /* IMAGE */
@@ -168,9 +169,10 @@
 
 /* AIRPORT CODE */
 .airportCode {
+  font-family: var(--font-heading);
   font-size: 28px;
   letter-spacing: 4px;
-  font-weight: 600;
+  font-weight: 400;
   color: #111;
 }
 

@@ -16,9 +16,9 @@ const Home = () => {
     return (
         <div>
         <Hero/>
-        <Difference />
-        <HowItWorks />
         <PopularJourneys />
+        <HowItWorks />
+        <Difference />
         {/* <Testimonials /> */}
         <StartPlanning />
         <TravelStyles />
