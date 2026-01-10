@@ -73,6 +73,26 @@
   flex-direction: column;
   gap: 6px;
 }
+.phoneField {
+    /* width: 100%; */  
+  --react-international-phone-height: 48px;
+  --react-international-phone-border-radius: 12px;
+  --react-international-phone-background-color: #fff;
+  --react-international-phone-border-color: #ddd;
+  --react-international-phone-font-size: 15px;
+  --react-international-phone-color: #222;
+  --react-international-phone-focus-border-color: var(--secondary-color);
+}
+.phoneField {
+  width: 100%;
+}
+
+.phoneField .react-international-phone-input {
+  width: 100%;
+}
+.phoneField input {
+  width: 100% !important;
+}
 
 label {
   font-size: 14px;
@@ -155,4 +175,26 @@ textarea:focus {
   .form {
     padding: 30px 28px;
   }
+}
+.phoneField {
+  width: 100%;
+  margin-top: 6px;
+
+}
+
+.inputGroupFull {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.react-international-phone-input {
+  width: 100% !important;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc !important;
+  font-size: 14px;
+  height: 48px;
+  padding:  10px;
+
 }
